@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function header_(string $title, string $active): void
 {
-    $nav = ['dashboard' => 'Dashboard', 'expenses' => 'Expenses', 'income' => 'Income', 'loans' => 'Loans', 'goals' => 'Savings goals', 'developer' => 'Developer'];
+    $nav = ['dashboard' => 'Dashboard', 'expenses' => 'Expenses', 'income' => 'Income', 'loans' => 'Loans', 'goals' => 'Savings goals', 'developer' => 'Developer', 'future' => 'Future development'];
     echo '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">';
     echo '<title>' . h($title) . ' · My Finances</title><link rel="stylesheet" href="assets/style.css"></head><body>';
     echo '<header><strong>💰 My Finances</strong><nav>';
