@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 const CURRENCY = '₹';
+const DEVELOPER_NAME = 'Ankur Bamrara';
 const CATEGORIES = ['Food', 'Groceries', 'Rent', 'Utilities', 'Transport', 'Health', 'Shopping', 'Entertainment', 'Education', 'Travel', 'Other'];
 
 session_start();

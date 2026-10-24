@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function header_(string $title, string $active): void
 {
-    $nav = ['dashboard' => 'Dashboard', 'expenses' => 'Expenses', 'income' => 'Income', 'loans' => 'Loans', 'goals' => 'Savings goals'];
+    $nav = ['dashboard' => 'Dashboard', 'expenses' => 'Expenses', 'income' => 'Income', 'loans' => 'Loans', 'goals' => 'Savings goals', 'developer' => 'Developer'];
     echo '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">';
     echo '<title>' . h($title) . ' · My Finances</title><link rel="stylesheet" href="assets/style.css"></head><body>';
     echo '<header><strong>💰 My Finances</strong><nav>';
@@ -18,7 +18,7 @@ function header_(string $title, string $active): void
 
 function footer_(): void
 {
-    echo '</main></body></html>';
+    echo '</main><footer>Developed by <a href="index.php?page=developer">' . h(DEVELOPER_NAME) . '</a></footer></body></html>';
 }
 
 function deleteForm(string $page, int $id, string $confirm = 'Delete this entry?'): string
